@@ -9,7 +9,18 @@ import { Component } from '@angular/core';
 })
 
 export class MiComponente{
+    public titulo: string;
+    public comentario: string;
+    public year: number;
+    
+    
     constructor(){
+
+        this.titulo = "Hola mundo";
+        this.comentario = " mi primer comentario";
+        this.year = 2020;
+
         console.log("Mi Componente cargado!");
+        console.log(this.titulo, this.comentario, this.year);
     }
 }
